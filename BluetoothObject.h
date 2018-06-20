@@ -54,7 +54,7 @@ typedef NS_ENUM(NSUInteger, BluetoothState) {
 @interface BluetoothObject : NSObject
 
 // 回调代理
-@property (nonatomic, strong) id<BluetoothObjectDelegate> delegate;
+@property (nonatomic, weak) id<BluetoothObjectDelegate> delegate;
 
 - (instancetype)initWithDeviceDelegate:(id<BluetoothObjectDeviceDelegate>)deviceInfo;
 
